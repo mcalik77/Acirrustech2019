@@ -1,4 +1,4 @@
-resource "aws_instance" "web1" {
+resource "aws_instance" "Dev" {
     ami = "ami-035b3c7efe6d061d5" 
     instance_type = "t2.micro"
     key_name = "${aws_key_pair.terraform_april.key_name}"
