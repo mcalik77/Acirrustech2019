@@ -4,10 +4,6 @@ resource "aws_instance" "web1" {
     key_name = "${aws_key_pair.terraform_april.key_name}"
     security_groups = ["${aws_security_group.sec1.name}"]
 
-
-
-
-
     tags = {
         Name = "Dev"
         Dept =  "IT"
